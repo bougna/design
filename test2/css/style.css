@@ -1,0 +1,183 @@
+header{
+    color: white;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/Subtract2.jpg');
+    display: flex;
+    flex-direction: column;
+}
+.top-part-header{
+    display: flex;
+    flex-direction: row;
+}
+nav{
+    letter-spacing: 0.2em;
+    width: 20%;
+    max-height: 40vh;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+.logo{
+    font-family: Avenir;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;;
+    height: 20%;
+    width: 100%;
+
+}
+.logo>span{
+    padding-left: 25px;
+    letter-spacing: 0.04em
+}
+.logo::before{
+    content: '';
+    width: 4.5em;
+    height: 1.8em;
+    border: 1px solid white;
+    position: absolute;
+}
+.menu{
+    font-size: 18px;
+    list-style-type: none;
+    margin-bottom: 70px;
+    height: 70%;
+    width: 100%;
+    padding-left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.menu>li{
+    padding-left: 25px;
+}
+.middle-zone-header{
+    width: 45%;
+    margin-left: 5%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header-title-zone{
+    height: 100%;
+    margin-top: 7%;
+}
+.above-title-text{
+    font-size: 39px;
+    letter-spacing: 0.1em;
+}
+.title{
+    position: relative;
+    font-size: 100px;
+    width: 700px;
+    font-family: Montserrat;
+    line-height: 100px;
+    margin: 0;
+}
+.title>a{
+    width: 100px;
+    height: 70px;
+    display: inline-block;
+    position: absolute;
+    bottom: 5px;
+    right: 200px;
+}
+.detail-point-zone{
+    margin-top: 7%;
+    position: relative;
+}
+.detail-point{
+
+}
+.right-zone-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 35%;
+}
+.right-zone-header>div{
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+.right-zone-header>div>.detail-point{
+    position: absolute;
+}
+.bottom-part-header{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.left-bottom-part{
+    width: calc(2.7*100%/4);
+    height: 80%;
+    display: inherit;
+    justify-content: space-around;
+}
+.image-little-boxes{
+    width: 30%;
+    aspect-ratio: 3/4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.image-little-boxes>img{
+    border: 2px solid white;
+    border-radius: 15px;
+}
+.right-bottom-part{
+    width: calc(1.3*100%/4);
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+.play-button>.circle{
+    width: 140px;
+    height: 140px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.play-button>.triangle{
+    width: 120px;
+    height: 120px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.triangle1,.triangle2,.triangle3{
+    width: 100px;
+    height: 100px;
+}
+.triangle1{
+    position: absolute;
+    border-left: 1px solid black;
+}
+.triangle2{
+    position: absolute;
+    border-top: 1px solid black;
+    transform: rotate(45deg);
+}
+.triangle3{
+    position: absolute;
+    border-bottom: 1px solid black;
+    transform: rotate(-45deg);
+}

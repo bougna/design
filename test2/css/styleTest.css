@@ -1,0 +1,188 @@
+:root{
+    --head-size: 100px;
+    --eyes-size: calc(var(--head-size)/5);
+    --mounth-size: 15px;
+}
+html{
+    margin: 0;
+}
+body,.visage{
+    display: flex;
+    flex-direction: column;
+}
+.animate-icones,.eyes,.cils{
+    display: flex;
+    flex-direction: row;
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #00002e;
+}
+
+.animate-icones{
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+}
+.emojies>.head{
+    width: var(--head-size);
+    height: var(--head-size);
+    background-color: yellow;
+    border-radius: 50%;
+    position: relative;
+    transition-duration: 200ms;
+}
+.head:hover{
+    box-shadow: 0px 0px 20px 20px white;
+    transition-duration: 200ms;
+    margin: 20px;
+}
+.head.h1{
+    background: linear-gradient(50deg, rgb(250,25,7) 70%,rgb(255,218,0)100%);
+    border: 2px solid rgb(250, 88, 7);
+}
+.head.h2{
+    background: linear-gradient(50deg, rgb(250,25,7) 40%,rgb(255,218,0)90%);
+    border: 2px solid rgb(250, 88, 7);
+}
+.head.h3{
+    background: linear-gradient(50deg, rgb(250, 157, 7) 40%,rgb(255,218,0)80%);
+    border: 2px solid rgb(250, 193, 7);
+}
+.head.h4{
+    background: linear-gradient(50deg, rgb(250, 157, 7) 10%,rgb(255,218,0)50%);
+    border: 2px solid rgb(250, 193, 7);
+}
+.head.h5{
+    background: linear-gradient(50deg, rgb(250, 157, 7) 0%,rgb(255,218,0)50%); 
+    border: 2px solid rgb(250, 226, 7);
+}
+.visage{
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    position: absolute;
+}
+.eyes,.cils{
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 25px;
+}
+.cils{
+    position: absolute;
+    top: 20%;
+}
+.cil{
+    width: 22px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    animation: clin-cils 2.8s infinite;
+}
+.cil.left-colere{
+    transform: rotate(20deg);
+}
+.cil.right-colere{
+    transform: rotate(-20deg);
+}
+
+.eyes.e1{
+    padding-top: 45px;
+}
+.eyes.e2{
+    padding-top: 40px;
+}
+.eyes.e3{
+    padding-top: 35px;
+}
+.eyes.e4{
+    padding-top: 30px;
+}
+.eyes.e5{
+    padding-top: 25px;
+}
+.eye{
+    width: var(--eyes-size);
+    height: var(--eyes-size);
+    border-radius: 50%;
+    background-color: #000;
+    animation: clin 2.8s infinite;
+}
+.visage>.e1>.eye{
+    animation-delay: 0ms;
+}
+.visage>.e2>.eye{
+    animation-delay: 200ms;
+}
+.visage>.e3>.eye{
+    animation-delay: 400ms;
+}
+.visage>.e4>.eye{
+    animation-delay: 600ms;
+}
+.visage>.e5>.eye{
+    animation-delay: 800ms;
+}
+.mounth{
+    width: var(--mounth-size);
+    height: var(--mounth-size);
+    border: 5px solid #000;
+    transform: rotate(-45deg);
+}
+.mounth.m1{
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+.mounth.m2{
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+.mounth.m3{
+    height: 0px;
+    border-radius: 5px;
+    border: 4px solid #000;
+    transform: rotate(0deg);
+}
+.mounth.m4{
+    border-radius: 50%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    top: 38px;
+}
+.mounth.m5{
+    width: 20px;
+    height: 5px;
+    background-color: #000;
+    border-bottom-left-radius: 100% 200%;
+    border-bottom-right-radius: 100% 200%;
+    transform: rotate(0deg);
+}
+@keyframes clin {
+    0%{
+        transform: scaleY(1);
+    }
+    5%{
+        transform: scaleY(0);
+    }
+    10%{
+        transform: scaleY(1);
+    }
+}
+@keyframes clin-cils {
+    0%{
+        margin-top: 0px;
+    }
+    5%{
+        margin-top: calc(var(--eyes-size)/4);
+    }
+    10%{
+        margin-top: 0px;
+    }
+}

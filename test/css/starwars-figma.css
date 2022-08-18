@@ -1,0 +1,52 @@
+.main-container{
+    width: 65%;
+    min-width: 1004px;
+    animation: come 300ms linear;
+}
+.second-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 604px;
+}
+.big-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 75px;
+    flex-wrap: wrap;
+}
+.element-text-zone{
+    position: absolute;
+}
+.element-text-zone > .texte{
+    max-width: 422px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+.element-text-zone > .titre{
+    font-size: 40px;
+    line-height: 48.76px;
+    font-weight: 700;  
+}
+.element-text-zone > .logo {
+    width: 80px;
+    height: 80px;
+}
+.element-text-zone > div {
+    margin-bottom: 20px;
+}
+.element-date-zone{
+    height: 200px;
+    font-size: 200px;
+    font-weight: 800;
+    color:#FFF38A;
+}
+.date-zone-container{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}

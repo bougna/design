@@ -1,0 +1,153 @@
+body{
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #060447;
+    color:#FFF38A;
+    font-family: Montserrat;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.line-dot{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.dot{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid rgb(87, 87, 87);
+    background-color: rgb(87, 87, 87);
+    position: relative;
+}
+.second-dot{
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+.dot-container{
+    position: relative;
+}
+.line{
+    width: 25%;
+    height: 3px;
+    background-color: rgb(87,87,87);
+    transform: scaleX(1);
+}
+.second-line{
+    width: 100%;
+    transform-origin:left ;
+    position: absolute;
+    transform: scaleX(0);
+    transition-duration: 300ms;
+}
+.next-prev-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.button-round{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.arrow{
+    width: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.button-round:hover{
+    transition: background-color .5s;
+    background-color: rgba(87, 87, 87, 0.578);
+}
+.arrow-head{
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #FFF38A;
+    border-right: 2px solid #FFF38A;
+}
+.arrow-body{
+    width: 30px;
+    border: 1px solid #FFF38A;
+}
+.left-direction{
+    transform: rotate(225deg);
+    position: absolute;
+}
+.right-direction{
+    transform: rotate(45deg);
+    position: absolute;
+}
+span{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+#in_next{
+    justify-content: end;
+}
+.shine{
+    border-color: rgba(88, 77, 49, 0.269);
+    background-color: #FFF38A;
+    transition: all 1s linear;
+}
+.animate-dot{
+    animation: radialEnter 400ms linear;
+}
+.animate-smooth-right{
+    animation: smoothMoveToRight 400ms linear;
+    animation: come 500ms linear 0s 1 normal;
+}
+.animate-smooth-left{
+    animation: smoothMoveToLeft 1s linear;
+}
+@keyframes radialEnter{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes come{
+    0%{
+        transform: translate(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+@keyframes go{
+    0%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+    100%{
+        transform: translate(-100px);
+        opacity: 0;
+    }
+}

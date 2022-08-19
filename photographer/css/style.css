@@ -26,7 +26,6 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    animation: come 200ms linear;
 }
 .part-box.p1{
     background-color: #283618;
@@ -65,4 +64,32 @@ body{
         transform: translateX(0px);
     }
     
+}
+/* Cursor css */
+body{
+    cursor: ;
+}
+.cursor{
+    pointer-events: none;
+    position: absolute;
+    z-index: 10000;
+}
+.rounded-cursor{
+    width: 25px;
+    height: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    box-shadow: 0 0 1px 1px #000;
+}
+.rounded-cursor::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000;
+    box-shadow: 0 0 1px 1px #fff;
 }

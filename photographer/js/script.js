@@ -14,3 +14,23 @@ for (let i = 0; i < part_boxes.length; i++) {
         part.style.fontSize="2em"  
     })
 }
+
+// Js for cursor
+const rounded_cursor=document.querySelector('.rounded-cursor')
+const pointed_cursor=document.querySelector('.pointed-cursor')
+const moveCursor=(e)=>{
+  const mouseY= e.clientY
+  const mouseX= e.clientX
+  rounded_cursor.style.transform="translate3d("+mouseX+"px,"+mouseY+"px,0)"
+}
+document.addEventListener('mousemove',moveCursor)
+function c(){
+for (let i = 0; i < 3; i++) {
+    setTimeout(() => console.log(i), 1);
+}
+console.log('nintendo')
+for (let i = 0; i < 3; i++) {
+  setTimeout(() => console.log(i), 1);
+}
+}
+c()
